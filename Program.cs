@@ -24,7 +24,8 @@ namespace Contato
             builder.Services.AddScoped<IContatoRepository, ContatoRepository>();
             builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             builder.Services.AddScoped<ISessao, Sessao>();
-            //git push -u origin main
+            builder.Services.AddScoped<IEmail, Email>();
+
 
             builder.Services.AddSession(o =>
             {

@@ -135,3 +135,4 @@ C:\Users\Queen\Downloads\Projetos .NET\Contato\obj\Debug\net8.0\Contato.pdb
 C:\Users\Queen\Downloads\Projetos .NET\Contato\obj\Debug\net8.0\Contato.genruntimeconfig.cache
 C:\Users\Queen\Downloads\Projetos .NET\Contato\obj\Debug\net8.0\ref\Contato.dll
 C:\Users\Queen\Downloads\Projetos .NET\Contato\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Queen\Downloads\Projetos .NET\Contato\obj\Debug\net8.0\Contato.sourcelink.json
