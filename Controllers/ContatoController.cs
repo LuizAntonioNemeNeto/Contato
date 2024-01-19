@@ -19,8 +19,9 @@ namespace Contato.Controllers
         }
         public IActionResult Index()
         {
-            
-            List<ContatoModel> contatos = _contatoRepository.BuscarTodos();
+            UsuarioModel usuarioLogado = _sessao.BuscaSessaoUsuario();
+            List<ContatoModel> contatos = _contatoRepository.BuscarTodos(usuarioLogado.Id);
+
             return View(contatos);
         }
         public IActionResult Criar()

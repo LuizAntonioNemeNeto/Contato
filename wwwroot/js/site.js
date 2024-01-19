@@ -1,6 +1,20 @@
 ﻿$(document).ready(function () {
     getDatatable('#table-contato');
     getDatatable('#table-usuario');
+
+    //Modal
+    $('.btn-total-contatos').click(function () {
+        var usuarioId = $(this).attr('usuario-id');
+        $.ajax({
+            type: 'GET',
+            url: '/Usuario/ListarContatosPorUsuarioId/' + usuarioId,
+            success: function (result) {
+                $('#listaContatosUsuario').html(result);
+                $('#modalContatoUsuario').modal('show');
+                getDatatable('#table-contato-usuario');
+            }
+            });
+    });
 })
 
 function getDatatable(id) {

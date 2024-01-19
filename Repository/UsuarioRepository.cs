@@ -1,5 +1,6 @@
 ﻿using Contato.Data;
 using Contato.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Contato.Repository
 {
@@ -17,7 +18,7 @@ namespace Contato.Repository
         }
         public List<UsuarioModel> BuscarTodos()
         {
-            return _bancoContext.Usuarios.ToList();
+            return _bancoContext.Usuarios.Include(x => x.Contatos).ToList();
         }
         public UsuarioModel BuscaPorLogin(string login)
         {
